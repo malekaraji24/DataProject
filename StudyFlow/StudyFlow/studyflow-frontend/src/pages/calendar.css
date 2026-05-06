@@ -1,0 +1,210 @@
+.calMonthNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.monthNavBtn {
+  background: white;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+  transition: background 0.15s;
+}
+
+.monthNavBtn:hover {
+  background: #f5f7fb;
+}
+
+.monthLabel {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.calendarWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.calendarMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.weekdayRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.weekdayLabel {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  padding: 6px 0;
+}
+
+.calGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calCell {
+  background: white;
+  border-radius: 10px;
+  min-height: 80px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s;
+}
+
+.calCell:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.calCell.empty {
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.calCell.today {
+  border: 2px solid #2da9e9;
+}
+
+.calCell.selected {
+  background: #e8f4ff;
+  border: 2px solid #2da9e9;
+}
+
+.dayNum {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  align-self: flex-end;
+  margin-bottom: 6px;
+}
+
+.calCell.today .dayNum {
+  color: #2da9e9;
+}
+
+.dotRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.taskDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.moreDots {
+  font-size: 10px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.dayPanel {
+  width: 280px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+}
+
+.dayPanelHeader {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dayTaskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dayTaskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.dayTaskDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.dayTaskTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.dayTaskMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.calLegend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .calendarWrapper {
+    flex-direction: column;
+  }
+
+  .dayPanel {
+    width: 100%;
+  }
+}

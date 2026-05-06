@@ -1,0 +1,131 @@
+.planStats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.statChip {
+  background: #e8f4ff;
+  color: #2563eb;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.generateCard {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 28px;
+}
+
+.sliderRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0 16px;
+}
+
+.sliderRow input[type="range"] {
+  flex: 1;
+  accent-color: #2da9e9;
+  height: 6px;
+  cursor: pointer;
+}
+
+.sliderRow input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2da9e9;
+  background: white;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.sliderRow input[type="number"]:focus {
+  border-color: #2da9e9;
+  box-shadow: 0 0 0 3px rgba(45, 169, 233, 0.12);
+}
+
+.sliderRow input[type="number"]:focus {
+  border-color: #2da9e9;
+}
+
+.scheduleContainer {
+  margin-top: 4px;
+}
+
+.dateGroup {
+  margin-bottom: 24px;
+}
+
+.dateHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6b7280;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.dayTotalHours {
+  background: #f0f1f5;
+  color: #374151;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sessionCard {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sessionLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.coursePill {
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sessionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.hoursPill {
+  background: #e8f4ff;
+  color: #2da9e9;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
